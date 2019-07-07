@@ -9,7 +9,7 @@ import time
 
 '''
 This python program is a bot that automatically signs you up for leetcode weekly contest.
-To make this work, in additionally to the code here, you will need 2 more components.
+To make this work, in additionally to the code here, you will need 3 more components.
 
 (1) You need a task scheduler that would execute this program at a time of your choosing.
     For example, cron daemon on Linux. Personally, I set the program to run at 1PM on Wednesday.
@@ -17,6 +17,8 @@ To make this work, in additionally to the code here, you will need 2 more compon
 
 (2) You need to install the driver program that Selenium API can interact with.
     Personally, I prefer Google Chrome, so I installed Chromedriver, which this Python code will call.
+
+(3) You need to install selenium. Just pip install selenium. 
 
 Note: If leetcode makes changes to its web html source code, you will have to adjust this code accordingly.
 '''
