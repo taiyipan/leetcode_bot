@@ -18,7 +18,7 @@ To make this work, in additionally to the code here, you will need 3 more compon
 (2) You need to install the driver program that Selenium API can interact with.
     Personally, I prefer Google Chrome, so I installed Chromedriver, which this Python code will call.
 
-(3) You need to install selenium. Just pip install selenium. 
+(3) You need to install selenium. Just pip install selenium.
 
 Note: If leetcode makes changes to its web html source code, you will have to adjust this code accordingly.
 '''
@@ -80,7 +80,7 @@ register = WebDriverWait(driver, 5).until(
 register.click()
 # locate confirmation button and click
 confirm = WebDriverWait(driver, 5).until(
-    EC.presence_of_element_located((By.XPATH, '/html/body/div[6]/div/div[10]/button[1]'))
+    EC.presence_of_element_located((By.XPATH, '/html/body/div[@class="swal2-container swal2-center swal2-fade swal2-shown"]/div/div[10]/button[1]'))
 )
 confirm.click()
 
